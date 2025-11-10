@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>фритато тато тато</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <h1> 🍅 Freetato</h1>
+        </div>
+        <div class="date-time" id="current-datetime"></div>
+        <nav class="menu">
+            <h3>Национальные кухни</h3>
+            <ul>
+                <li><label><input type="checkbox" data-cuisine="русская"> Русская</label></li>
+                <li><label><input type="checkbox" data-cuisine="итальянская"> Итальянская</label></li>
+                <li><label><input type="checkbox" data-cuisine="грузинская"> Грузинская</label></li>
+                <li><label><input type="checkbox" data-cuisine="японская"> Японская</label></li>
+                <li><label><input type="checkbox" data-cuisine="мексиканская"> Мексиканская</label></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <button class="btn">Войти</button>
+        </div>
+    </aside>
+    <div class="main-container">
+        <div class="recipes-area" id="recipes-area">
+            <div class="welcome" id="welcome-screen">
+                <h2>Что можно приготовить из этого?</h2>
+                <p>Вбей, что есть в холодильнике — и не выбрасывай зря!</p>
+                <p class="example">Например: <em>яйца, лук, макароны</em></p>
+            </div>
+        </div>
+        <footer class="chat-footer">
+            <div class="input-group">
+                <input type="text" id="ingredients-input" placeholder="Что у тебя есть? (яйца, лук, картошка...)">
+                <label class="file-label">📎
+                    <input type="file" id="fridge-photo" accept="image/*" style="display: none;">
+                </label>
+                <button id="search-btn">Найти</button>
+            </div>
+            <p class="hint">Можно добавить фото холодильника — скоро ИИ прочитает!</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
